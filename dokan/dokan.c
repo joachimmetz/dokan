@@ -19,8 +19,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
 
-#define _UNICODE
-
 #include <windows.h>
 #include <winioctl.h>
 #include <stdio.h>
@@ -636,7 +634,7 @@ DokanStart(PDOKAN_INSTANCE Instance)
 }
 
 
-BOOL
+BOOL DOKANAPI
 DokanSetDebugMode(
 	ULONG	Mode)
 {

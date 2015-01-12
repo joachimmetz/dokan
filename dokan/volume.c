@@ -23,7 +23,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 #include "fileinfo.h"
 
 
-int DokanGetDiskFreeSpace(
+int __stdcall DokanGetDiskFreeSpace(
 	PULONGLONG			FreeBytesAvailable,
 	PULONGLONG			TotalNumberOfBytes,
 	PULONGLONG			TotalNumberOfFreeBytes,
@@ -37,7 +37,7 @@ int DokanGetDiskFreeSpace(
 }
 
 
-int DokanGetVolumeInformation(
+int __stdcall DokanGetVolumeInformation(
 	LPWSTR		VolumeNameBuffer,
 	DWORD		VolumeNameSize,
 	LPDWORD		VolumeSerialNumber,

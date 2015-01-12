@@ -22,7 +22,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 #ifndef _PUBLIC_H_
 #define _PUBLIC_H_
 
-#include "devioctl.h"
+//#include "devioctl.h"
+#include <windows.h>
 
 #define DOKAN_DRIVER_VERSION	0x0000190
 

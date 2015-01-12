@@ -24,14 +24,10 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #define DOKAN_DRIVER_NAME	L"dokan.sys"
 
-#ifndef _M_X64	
-  #ifdef _EXPORTING
+#ifdef _EXPORTING
 	#define DOKANAPI __declspec(dllimport) __stdcall
-  #else
-	#define DOKANAPI __declspec(dllexport) __stdcall
-  #endif
 #else
-  #define DOKANAPI
+	#define DOKANAPI __declspec(dllexport) __stdcall
 #endif
 
 #define DOKAN_CALLBACK __stdcall
